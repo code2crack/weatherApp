@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,200;8..30,300;8..30,400;8..30,900&family=Raleway:ital,wght@1,900&family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Piazzolla', serif;
+}
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Navbar section open */
+.main_menu {
+    background-color: var(--main-bg);
+}
+
+.navbar {
+    background-color: var(--main-bg);
+    color: white;
+    padding: 2rem 0px;
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.navbar li a {
+    margin-left: 2rem;
+}
+
+.navbar li a:hover {
+    color: var(--main-color);
+}
+
+.navbar-toggler {
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+}
+
+.fa-snowflake {
+    transition: all linear;
+    animation: rot 2s linear 0s infinite;
+    color: var(--main-color);
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Navbar section close */
+
+
+/* Main header section open */
+
+.main_header_left {
+    /* padding: 0rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 35rem;
+}
+
+.main_header_left p {
+    font-size: 2rem;
+}
+
+.main_header_left h1 {
+    font-size: 4rem;
+    margin: 1rem 0rem 4rem 0rem;
+}
+
+.main_header_left h1 span {
+    color: var(--main-color);
+}
+
+.main_header_left button {
+    padding: .8rem 1.2rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    box-shadow: 0px 8px 8px -6px black;
+}
+
+.main_header_left button:hover {
+    box-shadow: 0px 8px 8px -6px var(--main-color);
+}
+
+.main_header_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 30rem;
+}
+
+.main_header_right img {
+    max-width: 50rem;
+}
+
+/* Main header section close */
+
+
+/* Footer Section open */
+footer {
+    background-color: var(--main-bg);
+    color: white;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0rem;
+    text-align: center;
+    line-height: 6rem;
+    font-size: 1.4rem;
+}
+
+/* Footer Section close */
+
+
+/* Responsive section open */
+@media screen and (max-width:500px) {
+    .main_header_right img {
+        max-width: 30rem;
+        height: auto;
+    }
+}
+
+/* Responsive section close */
+
+
+
+
+/* About Page style open */
+.main_header_right figure {
+    width: 100%;
+}
+
+.main_header_right figure img {
+    /* box-shadow: 0px 8px 6px 6px black; */
+    filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 1));
+    transition: all linear;
+    display: block;
+    margin: auto;
+}
+
+/* About Page style close */
+
+
+/* Weather Page style open */
+/* ---Main Content Div open */
+.main_content {
+    margin: 6rem auto 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.temp_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#city_name {
+    background-color: var(--main-bg);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    padding: 1rem 10rem 1rem 2rem;
+    width: 50vw;
+}
+
+#submitBtn {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem;
+    margin-left: -9rem;
+}
+
+#submitBtn:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
+/* ---Main Content Div close */
+
+
+/* ---Temp Info Div open */
+.temp_info {
+    background-color: var(--main-bg);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: auto;
+    max-width: 32rem;
+    height: 25rem;
+    margin: 2rem auto;
+}
+
+/* ----- */
+.temp_info .top_layer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: #364752;
+    border-radius: 2rem 2rem 0rem 0rem;
+    padding: 2rem 2rem;
+    font-weight: 500;
+}
+
+.temp_info .top_layer #today_day {
+    margin: 0px;
+}
+
+.temp_info .top_layer #today_date {
+    margin: 0px;
+}
+
+/* ------ */
+.main_layer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+    padding: 0rem 2rem;
+}
+
+.main_layer #your_city_name {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.main_layer .middle_layer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.main_layer .data_hide {
+    visibility: hidden;
+    transition: all .3s linear;
+}
+
+.main_layer .middle_layer #temp_status {
+    font-size: 4rem;
+}
+
+/* ---Temp Info Div close */
+/* Weather Page style close */
+
+/* Weather Page Responsive section open */
+@media screen and (max-width:600px) {
+    #city_name {
+        width: 75vw;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    #submitBtn {
+        width: 75vw;
+        margin: auto
+    }
+}
+
+/* Weather Page Responsive section close */

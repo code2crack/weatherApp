@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Web About page</title>
+
+    {{!-- Links open --}}
+    {{>headerlinks}}
+    {{!-- Links close --}}
+
+</head>
+
+<body>
+    <!-- Navbar section open -->
+    {{>navbar}}
+    <!-- Navbar section close -->
+
+    <!-- Main header section open -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md- col-12 mx-auto  main_header_left align-items-center">
+                <figure>
+                    <img src="./IMAGES/404error.png" width="375" alt="About Error" class="img-fluid my-2"
+                        title="Abid Kalam">
+                </figure>
+                <p class="my-0">Welcome to my Coding World</p>
+                <h1 class="my-3" style="font-size: 3.5rem">{{errorMsg}}</h1>
+                <a href="/" class="my-3"><button>GO BACK</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- Main header section close -->
+
+    <!-- Footer Section open -->
+    {{>footer}}
+    <!-- Footer Section close -->
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Web About page</title>
+
+    {{!-- Links open --}}
+    {{>headerlinks}}
+    {{!-- Links close --}}
+    
+</head>
+
+<body>
+    <!-- Navbar section open -->
+    {{>navbar}}
+    <!-- Navbar section close -->
+
+    <!-- Main header section open -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto ">
+                <div class="row">
+                    <!-- left side div open-->
+                    <div class="col-md-6 col-12 main_header_right">
+                        <figure>
+                            <img src="./IMAGES/about_bg.png" alt="About Error" class="img-fluid" title="Abid Kalam">
+                        </figure>
+                    </div>
+                    <!-- left side div close -->
+
+                    <!-- right side div open-->
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p>Welcome to my Coding World</p>
+                        <h1>I Am A <span>MERN Stack</span> Developer And Freelancer</h1>
+                        <a href="https://www.facebook.com" target="_blank"><button>ABOUT ME</button></a>
+                    </div>
+
+                    <!-- right side div close-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main header section close -->
+
+    <!-- Footer Section open -->
+    {{>footer}}
+    <!-- Footer Section close -->
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Web</title>
+    {{!-- Links open --}}
+    {{>headerlinks}}
+    {{!-- Links close --}}
+</head>
+
+<body>
+    <!-- Navbar section open -->
+    {{>navbar}}
+    <!-- Navbar section close -->
+
+    <!-- Main header section open -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <div class="col-md-12 col-12 mx-auto ">
+
+                <div class="main_content">
+                    <form class="temp_form">
+                        <input type="text" id="city_name" placeholder="Enter Your City Name">
+                        <button type="submit" id="submitBtn">Search</button>
+                    </form>
+                </div>
+
+                <div class="temp_info">
+                    <div class="top_layer">
+                        <p id="today_day">Sunday</p>
+                        <p id="today_date">18 DEC 2022</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="your_city_name">Get Output Here</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="temp_value">26.49</span><sup>o</sup>C</p>
+                            <p id="temp_status"><i class="fa fa-cloud" style="color: #0097e6"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Main header section close -->
+
+    <!-- Footer Section open -->
+    {{>footer}}
+    <!-- Footer Section close -->
+
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
+
+{{!-- 1hr:30min --}}
